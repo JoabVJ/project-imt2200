@@ -21,10 +21,15 @@ ___
 ___
 
 ### Pasos a Realizar
-Tomar datos provenientes de la Plataforma de Datos Abiertos del Gobierno de Chile, específicamente del conjunto “Atenciones de Urgencia por Causas Respiratorias”
-(https://datos.gob.cl/dataset/atenciones-de-urgencia-causas-respiratorias). Luego, limpiarla y filtrarla de tal forma que dejemos todo lo que pueda ser relevante para contestar las preguntas a continuación.
-Además, 
-
+Tomaremos datos provenientes de la Plataforma de Datos Abiertos del Gobierno de Chile, específicamente del conjunto “Atenciones de Urgencia por Causas Respiratorias” (https://datos.gob.cl/dataset/atenciones-de-urgencia-causas-respiratorias). Luego, limpiarla y filtrarla de tal forma que dejemos todo lo que pueda ser relevante para contestar las preguntas a continuación, además de cambiar los tipos de datos para que sean más trabajables.
+Por ejemplo, luego queremos explorar qué patologías afectan con mayor frecuencia a cada grupo etario, región y nivel de gravedad, para ello filtraríamos las columnas columnas que se relacionan con rango etario y graficando para notar cómo varía la cantidad total por rango etario y causas de contagio/hospitalización. Así con cada objetivo y pregunta, de esta manera, en conjunto contribuyen a entregar una visión integral que respalda la respuesta a la pregunta de investigación principal. 
+Además corroboramos que se pueda predecir o utilizar algún modelo para mejorar el análisis, y además contribuir a mejorar la conclusión de la pregunta principal. Entonces, entrenamos un modelo que analice según la estación, para que haga una estimación en comparación de los datos reales cómo se comporta la cantidad de personas que ingresan e ingresarían.
 
 ### Citas
-- 
+[1] Chen, Y., Klein, S. L., Garibaldi, B. T., Li, H., Wu, C., Osevala, N. M., Li, T., Margolick, J. B., Pawelec, G. y Leng, S. X. (2021). Envejecimiento en COVID-19: vulnerabilidad, inmunidad e intervención. Revisiones de investigación sobre el envejecimiento, 65, 101205. https://pubmed.ncbi.nlm.nih.gov/33137510/
+
+[2] Zuo, Z., Yang, C., Ye, F., Wang, M., Wu, J., Tao, C., Xun, Y., Li, Z., Liu, S., Huang, J., & Xu, A. (2023). Tendencias de las enfermedades respiratorias antes y después de la pandemia de COVID-19 en China de 2010 a 2021. Salud pública de BMC, 23(1), 217. https://pubmed.ncbi.nlm.nih.gov/36721137/
+
+[3] https://github.com/CSSEGISandData/COVID-19
+
+[4] https://ourworldindata.org/covid-cases
