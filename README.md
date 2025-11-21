@@ -25,6 +25,14 @@ Tomaremos datos provenientes de la Plataforma de Datos Abiertos del Gobierno de 
 Por ejemplo, luego queremos explorar qué patologías afectan con mayor frecuencia a cada grupo etario, región y nivel de gravedad, para ello filtraríamos las columnas columnas que se relacionan con rango etario y graficando para notar cómo varía la cantidad total por rango etario y causas de contagio/hospitalización. Así con cada objetivo y pregunta, de esta manera, en conjunto contribuyen a entregar una visión integral que respalda la respuesta a la pregunta de investigación principal. 
 Además corroboramos que se pueda predecir o utilizar algún modelo para mejorar el análisis, y además contribuir a mejorar la conclusión de la pregunta principal. Entonces, entrenamos un modelo que analice según la estación, para que haga una estimación en comparación de los datos reales cómo se comporta la cantidad de personas que ingresan e ingresarían.
 
+### Entrega Final
+Consideramos que era mejor usar el metodo de Calificacion ya que se acomoda mas a nuestras variables.
+Pese a que ek modelo presenta un aumento del error en ciertos contextos(semanas o regiones) debido a "spikes" en la demanda, pero eso es lo esperable ya que el modelo no puede manejar bien esos contextos.
+
+Con la diferencia entre el MAE y el RMSE podemos contestar nuestra pregunta de que la volatilidad de la demanda aumento despues de la pandemia, lo que genera los "spikes" que generan los problemas del modelo, lo que justifica que los patrones de demanda se modificaran post pandemia
+
+### Sesgos del Modelo
+Por lo que podemos ver en los datos podemos ver que los mas presentes son infantes hasta los 5 años y adultos mayores desde los 65, como el modelo no mide esto puede ocurrir que prediga un "spike" segun semana, estacion, etc pero no va a ser capaz de identificar que el contexto de la gente afecta ya sea negativa o positivamente, esto tambien sucede con las regiones, ya que hay mucho contexto que no se toma en cuenta y que puede ser determinante 
 ### Citas
 [1] Chen, Y., Klein, S. L., Garibaldi, B. T., Li, H., Wu, C., Osevala, N. M., Li, T., Margolick, J. B., Pawelec, G. y Leng, S. X. (2021). Envejecimiento en COVID-19: vulnerabilidad, inmunidad e intervención. Revisiones de investigación sobre el envejecimiento, 65, 101205. https://pubmed.ncbi.nlm.nih.gov/33137510/
 
