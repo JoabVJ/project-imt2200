@@ -3,32 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concepto Moderno</title>
+    <title>Portafolio Moderno</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="bg-gradient"></div>
-
     <nav>
-        <div class="logo">Creativo.</div>
+        <div class="logo">Portfolio.</div>
         <ul class="menu">
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Trabajos</a></li>
-            <li><a href="#">Contacto</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
         </ul>
     </nav>
 
-    <main class="hero">
-        <div class="glass-card">
-            <h1>Crea sin <span class="gradient-text">Límites</span></h1>
-            <p>El minimalismo no es la ausencia de algo, es la cantidad perfecta de todo.</p>
-            <a href="#" class="btn-primary">Ver Proyectos</a>
+    <section id="inicio" class="hero-section">
+        <div class="blob-bg"></div> <div class="content-wrapper">
+            <h1>Diseño <span class="gradient-text">Futurista</span></h1>
+            <p class="subtitle">Desliza hacia abajo para descubrir más.</p>
         </div>
-    </main>
+        <div class="scroll-indicator">↓</div>
+    </section>
+
+    <section id="proyectos" class="projects-section">
+        <div class="section-header">
+            <h2>Mis Trabajos</h2>
+            <p>Selección reciente</p>
+        </div>
+        
+        <div class="grid-gallery">
+            <div class="card card-large">
+                <div class="card-content">
+                    <h3>Proyecto Alpha</h3>
+                    <p>Desarrollo Web Fullstack</p>
+                </div>
+            </div>
+            <div class="card card-small">
+                <div class="card-content">
+                    <h3>App Beta</h3>
+                    <p>UI Design</p>
+                </div>
+            </div>
+            <div class="card card-small">
+                <div class="card-content">
+                    <h3>Dashboard</h3>
+                    <p>Data Analysis</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre-mi" class="about-section">
+        <div class="text-block">
+            <h2>Minimalismo & <br>Funcionalidad.</h2>
+            <p>Creo experiencias digitales que no solo se ven bien, sino que se sienten bien al usarlas. Menos ruido, más claridad.</p>
+            <a href="#" class="btn-primary">Contáctame</a>
+        </div>
+    </section>
 
 </body>
 </html>
