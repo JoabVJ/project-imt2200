@@ -18,17 +18,19 @@ body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--bg-dark);
     color: var(--text-white);
+    overflow: hidden;
 }
 
+/* --- 2. Navegación Fija (Sticky Header) --- */
 nav {
-    position: fixed; 
+    position: fixed; /* Se queda pegado arriba */
     top: 0;
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 1.5rem 5%;
     background: var(--nav-blur);
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px); /* Efecto vidrio en el menú */
     z-index: 100;
     border-bottom: 1px solid rgba(255,255,255,0.05);
 }
@@ -39,9 +41,9 @@ nav {
 .menu a { text-decoration: none; color: #94a3b8; font-size: 0.9rem; transition: 0.3s; }
 .menu a:hover { color: white; }
 
-
+/* --- 3. Estilos Generales de Secciones --- */
 section {
-    min-height: 100vh;
+    min-height: 100vh; /* Cada sección ocupa al menos toda la pantalla */
     display: flex;
     flex-direction: column;
     justify-content: center;
