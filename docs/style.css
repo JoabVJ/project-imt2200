@@ -1,0 +1,128 @@
+/* --- 1. Configuración Base --- */
+:root {
+    --bg-color: #0f172a;       /* Fondo oscuro profundo */
+    --text-color: #ffffff;     /* Texto blanco */
+    --accent-color: #38bdf8;   /* Azul cian moderno */
+    --secondary: #818cf8;      /* Violeta suave */
+    --glass-bg: rgba(255, 255, 255, 0.05); /* Transparencia para el vidrio */
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    height: 100vh;
+    overflow: hidden; /* Evita scroll para este demo */
+    position: relative;
+}
+
+a { text-decoration: none; color: inherit; transition: 0.3s; }
+
+/* --- 2. Navegación Minimalista --- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5%;
+    position: relative;
+    z-index: 10;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.5rem;
+    letter-spacing: -1px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.menu a:hover { color: var(--accent-color); }
+
+/* --- 3. El Efecto Creativo (Fondo y Vidrio) --- */
+/* Círculo difuminado de fondo para dar ambiente */
+.bg-gradient {
+    position: absolute;
+    top: -20%;
+    left: -10%;
+    width: 50vw;
+    height: 50vw;
+    background: linear-gradient(45deg, var(--accent-color), var(--secondary));
+    filter: blur(150px); /* El truco para que se vea suave */
+    border-radius: 50%;
+    opacity: 0.4;
+    z-index: 0;
+    animation: float 10s infinite ease-in-out;
+}
+
+.hero {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+}
+
+/* Tarjeta con efecto "Glassmorphism" */
+.glass-card {
+    background: var(--glass-bg);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px); /* Difumina lo que está detrás */
+    text-align: center;
+    max-width: 600px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+/* --- 4. Tipografía y Botones --- */
+h1 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+    margin-bottom: 1rem;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, var(--accent-color), var(--secondary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #cbd5e1; /* Gris claro */
+    margin-bottom: 2rem;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    background: white;
+    color: var(--bg-color);
+    font-weight: 700;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(255,255,255,0.2);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(255,255,255,0.3);
+}
+
+/* --- 5. Animación --- */
+@keyframes float {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(50px, 50px); }
+    100% { transform: translate(0, 0); }
+}
