@@ -63,7 +63,7 @@ const projectContent = [
 function generateProjectModule() {
     let htmlContent = `
         <div class="project-module">
-            <h2>🔬 Detalles y Metodología del Proyecto</h2>
+            <h2>Detalles y Metodología del Proyecto</h2>
             <div class="section-container">
     `;
 
