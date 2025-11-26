@@ -1,8 +1,8 @@
 // Integrantes
 const teamMembers = [
-    { name: 'Fernanda Le Roy', email: 'fernanda.leroy@ejemplo.cl', role: 'Diseño y Análisis' },
-    { name: 'Santiago Gonzalez', email: 'santiago.gonzalez@ejemplo.cl', role: 'Desarrollo Front-end' },
-    { name: 'Joab Vivanco', email: 'joab.vivanco@ejemplo.cl', role: 'Investigación y Documentación' },
+    { name: 'Fernanda Le Roy', email: 'fernanda.aros@uc.cl', role: 'Investigación y Documentación' },
+    { name: 'Santiago González', email: 'santiago.gonzlez@estudiante.uc.cl', role: 'Investigación y Análisis' },
+    { name: 'Joab Vivanco', email: 'joab.vj@estudiante.uc.cl', role: 'Diseño e Investigación' },
 ];
 
 function generateContactModule() {
