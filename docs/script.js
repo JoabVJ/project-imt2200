@@ -41,7 +41,7 @@ const projectContent = [
     { 
         title: 'Procesamiento de Información', 
         content: `La recolección de datos se realizó a través de fuentes públicas (Ministerio de Salud) para los años 2018 a 2022. Utilizamos **JavaScript** para limpiar y normalizar los conjuntos de datos, asegurando la coherencia entre las métricas PRE y POST pandemia.`,
-        mediaPlaceholder: true // Indicador para colocar una imagen o gráfico
+        // imageSrc: "IMAGES/grafico.png"
     },
     { 
         title: 'Análisis y Resultados', 
@@ -89,11 +89,11 @@ function generateProjectModule() {
         }
 
         // PROCESAMIENTO DE INFORMACION
-        if (section.mediaPlaceholder) {
+        if (section.imageSrc) {
             htmlContent += `
-                <figure class="media-placeholder">
-                    
-                    <figcaption>Visualización de la normalización de los datos (Pre y Post COVID-19).</figcaption>
+                <figure class="media-container">
+                    <img src="${section.imageSrc}" alt="Gráfico de ${section.title} class="project-image">
+                    <figcaption>Figura 1.${index}: ${section.title} - Visualización de datos.</figcaption>
                 </figure>
             `;
         }

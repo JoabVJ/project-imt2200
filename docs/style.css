@@ -260,13 +260,26 @@ p {
 }
 
 /* ESTILO PARA IMÁGENES */
-.media-placeholder {
+.media-container {
     margin: 20px 0;
-    padding: 15px;
+    text-align: center;
     border: 1px dashed var(--secondary);
     border-radius: 8px;
-    text-align: center;
+    padding: 15px;
     background: rgba(129, 140, 248, 0.05);
+}
+
+.project-image {
+    max-width: 100%; /* asegura que la imagen no se desborde */
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+figcaption {
+    font-size: 0.9rem;
+    color: #a0aec0;
+    margin-top: 10px;
 }
 
 @keyframes float {
