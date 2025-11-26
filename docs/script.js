@@ -8,7 +8,7 @@ const teamMembers = [
 function generateContactModule() {
     let htmlContent = `
         <div class="contact-module">
-            <h2>Integrantes</h2>
+            <h1>Integrantes</h1>
             <p>Puedes contactarnos directamente para consultas sobre la metodología:</p>
             <div class="contact-list">
     `;
@@ -64,7 +64,7 @@ const projectContent = [
 function generateProjectModule() {
     let htmlContent = `
         <div class="project-module">
-            <h2>Detalles y Metodología del Proyecto</h2>
+            <h2>Enfermades Respiratorias: PRE Y POST COVID-19</h2>
             <div class="section-container">
     `;
 
