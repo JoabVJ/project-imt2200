@@ -93,7 +93,7 @@ function generateProjectModule() {
         if (section.imageSrc) {
             htmlContent += `
                 <figure class="media-container">
-                    <img src="${section.imageSrc}" alt="Gráfico de ${section.title} class="project-image">
+                    <img src="${section.imageSrc}" alt="Gráfico de ${section.title}" class="project-image">  
                     <figcaption>Figura 1.${index}: ${section.title} - Visualización de datos.</figcaption>
                 </figure>
             `;
