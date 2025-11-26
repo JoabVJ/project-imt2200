@@ -24,7 +24,6 @@ body {
 
 a { text-decoration: none; color: inherit; transition: 0.3s; }
 
-/* --- 2. Navegación Minimalista --- */
 nav {
     display: flex;
     justify-content: space-between;
@@ -40,6 +39,7 @@ nav {
     letter-spacing: -1px;
     color:#ffffff;
 }
+.logo a:hover { color: var(--accent-color); }
 
 .menu {
     display: flex;
