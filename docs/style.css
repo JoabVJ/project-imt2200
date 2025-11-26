@@ -51,8 +51,6 @@ nav {
 
 .menu a:hover { color: var(--accent-color); }
 
-/* --- 3. El Efecto Creativo (Fondo y Vidrio) --- */
-/* Círculo difuminado de fondo para dar ambiente */
 .bg-gradient {
     position: absolute;
     top: -20%;
@@ -60,7 +58,7 @@ nav {
     width: 50vw;
     height: 50vw;
     background: linear-gradient(45deg, var(--accent-color), var(--secondary));
-    filter: blur(150px); /* El truco para que se vea suave */
+    filter: blur(150px); /*Le da suavidad */
     border-radius: 50%;
     opacity: 0.4;
     z-index: 0;
