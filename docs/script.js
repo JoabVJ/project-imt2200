@@ -129,28 +129,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainContentArea = document.getElementById('main-content');
     const initialCard = document.getElementById('initial-card');
     const logoLink = document.querySelector('.logo');
-    
+
     initialHTML = initialCard ? initialCard.outerHTML : ''; 
 
-    mainContentArea.addEventListener('click', (event) => {
-        
-        if (event.target.id === 'project') {
-            event.preventDefault(); 
-            mainContentArea.innerHTML = generateProjectModule();
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-        } 
-        
-        else if (event.target.id === 'contact-link') {
-            event.preventDefault(); 
-            mainContentArea.innerHTML = generateContactModule();
-        }
-    });
-
-    /* VOLVER AL MENU PRINCIPAL */
     if (logoLink) {
         logoLink.addEventListener('click', (event) => {
             event.preventDefault();
-            mainContentArea.innerHTML = initialHTML;
+            mainContentArea.innerHTML = initialHTML; // Inyecta la tarjeta inicial
         });
     }
 
@@ -158,7 +143,16 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactLinkNav) {
         contactLinkNav.addEventListener('click', (event) => {
             event.preventDefault(); 
-            mainContentArea.innerHTML = generateContactModule();
+            mainContentArea.innerHTML = generateContactModule(); // Inyecta la vista de Contactos
         });
     }
+
+    mainContentArea.addEventListener('click', (event) => {
+
+        if (event.target.id === 'project') {
+            event.preventDefault(); 
+            mainContentArea.innerHTML = generateProjectModule();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        } 
+    });
 });
