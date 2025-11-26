@@ -38,8 +38,10 @@ nav {
     font-size: 1.5rem;
     letter-spacing: -1px;
     color:#ffffff;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
-.logo a:hover { color: var(--accent-color); }
+
 
 .menu {
     display: flex;
@@ -174,7 +176,7 @@ p {
     font-weight: 700;
 }
 
-/* --- 5. Animación --- */
+
 @keyframes float {
     0% { transform: translate(0, 0); }
     50% { transform: translate(50px, 50px); }
