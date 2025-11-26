@@ -52,10 +52,11 @@ const projectContent = [
         content: 'Recibimos comentarios valiosos de profesores y expertos en salud pública, lo que llevó a recalcular las tasas ajustadas por población para mejorar la precisión del análisis.',
     },
     { 
-        title: 'Repositorios', 
+        title: 'Links Relevantes', 
         links: [
-            { text: 'Código Fuente (GitHub)', url: 'https://github.com/tu_usuario/proyecto_imt2200' },
-            { text: 'Conjunto de Datos Original', url: 'https://data.gob.cl/ejemplo' }
+            { text: 'Repositorio del Proyecto', url: 'https://github.com/JoabVJ/proyecto_imt2200' },
+            { text: 'Datos Originales - Gob', url: 'https://datos.gob.cl/dataset/atenciones-de-urgencia-causas-respiratorias' }
+            { text: 'Ministerio de Salud', url: 'https://www.minsal.cl/' },
         ]
     }
 ];
