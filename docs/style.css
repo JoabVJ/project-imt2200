@@ -121,6 +121,60 @@ p {
     box-shadow: 0 8px 25px rgba(255,255,255,0.3);
 }
 
+/* MODULO DE CONTACTOS*/
+.contact-module {
+    background: var(--glass-bg);
+    padding: 3rem;
+    border-radius: 20px;
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    color: var(--text-color);
+}
+
+.contact-list {
+    display: flex; /* ALINEACION*/
+    flex-wrap: wrap; /* SE ADAPTA A CELULARES */
+    justify-content: center;
+    gap: 30px;
+    margin-top: 2rem;
+}
+
+.member-card {
+    background: rgba(255, 255, 255, 0.08); /* más opacio que el principal */
+    padding: 20px;
+    border-radius: 12px;
+    flex-basis: 250px; /* Tamaño base de cada tarjeta de integrante */
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.member-card:hover {
+    transform: translateY(-5px); /* Efecto sutil al pasar el mouse */
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.member-card h3 {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    margin-bottom: 0.5rem;
+}
+
+.member-card p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+    color: #a0aec0; /* Un gris más claro para el rol */
+}
+
+.member-card a {
+    color: var(--secondary);
+    font-weight: 700;
+}
+
 /* --- 5. Animación --- */
 @keyframes float {
     0% { transform: translate(0, 0); }
