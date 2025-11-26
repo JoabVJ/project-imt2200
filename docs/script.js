@@ -8,8 +8,8 @@ const teamMembers = [
 function generateContactModule() {
     let htmlContent = `
         <div class="contact-module">
-            <h2>👥 Integrantes del Proyecto</h2>
-            <p>Puedes contactarnos directamente para consultas sobre la metodología y los datos.</p>
+            <h2>Integrantes</h2>
+            <p>Puedes contactarnos directamente para consultas sobre la metodología.</p>
             <div class="contact-list">
     `;
 
