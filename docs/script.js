@@ -55,7 +55,7 @@ const projectContent = [
         title: 'Links Relevantes', 
         links: [
             { text: 'Repositorio del Proyecto', url: 'https://github.com/JoabVJ/proyecto_imt2200' },
-            { text: 'Datos Originales - Gob', url: 'https://datos.gob.cl/dataset/atenciones-de-urgencia-causas-respiratorias' }
+            { text: 'Datos Originales - Gob', url: 'https://datos.gob.cl/dataset/atenciones-de-urgencia-causas-respiratorias' },
             { text: 'Ministerio de Salud', url: 'https://www.minsal.cl/' },
         ]
     }
