@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const initialHTML = initialCard ? initialCard.outerHTML : ''; 
 
     contactLink.addEventListener('click', (event) => {
-        event.preventDefault(); // Evita que la página intente navegar
+        event.preventDefault(); // No recarga la página
         mainContentArea.innerHTML = '';
         mainContentArea.innerHTML = generateContactModule();
     });
