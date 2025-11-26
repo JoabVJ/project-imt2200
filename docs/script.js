@@ -127,7 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactLink = document.getElementById('contact-link');
     const mainContentArea = document.getElementById('main-content');
     const initialCard = document.getElementById('initial-card');
-    const projectStartBtn = document.getElementById('project-start-btn'); 
+    const projectStartBtn = document.getElementById('project'); 
 
     if (projectStartBtn) {
         projectStartBtn.addEventListener('click', (event) => {
