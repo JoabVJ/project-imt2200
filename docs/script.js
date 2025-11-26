@@ -123,35 +123,42 @@ function generateProjectModule() {
     `;
     return htmlContent;
 }
+let initialHTML = null;
 
 document.addEventListener('DOMContentLoaded', () => {
-    const contactLink = document.getElementById('contact-link');
     const mainContentArea = document.getElementById('main-content');
     const initialCard = document.getElementById('initial-card');
-    const projectStartBtn = document.getElementById('project'); 
+    const logoLink = document.querySelector('.logo');
+    
+    initialHTML = initialCard ? initialCard.outerHTML : ''; 
 
-    if (projectStartBtn) {
-        projectStartBtn.addEventListener('click', (event) => {
+    mainContentArea.addEventListener('click', (event) => {
+        
+        if (event.target.id === 'project') {
             event.preventDefault(); 
-            
-            // SE CAMBIA EL CONTENIDO PRINCIPAL
             mainContentArea.innerHTML = generateProjectModule();
-            
             window.scrollTo({ top: 0, behavior: 'smooth' });
+        } 
+        
+        else if (event.target.id === 'contact-link') {
+            event.preventDefault(); 
+            mainContentArea.innerHTML = generateContactModule();
+        }
+    });
+
+    /* VOLVER AL MENU PRINCIPAL */
+    if (logoLink) {
+        logoLink.addEventListener('click', (event) => {
+            event.preventDefault();
+            mainContentArea.innerHTML = initialHTML;
         });
     }
-    const initialHTML = initialCard ? initialCard.outerHTML : ''; 
 
-    contactLink.addEventListener('click', (event) => {
-        event.preventDefault(); // No recarga la página
-        mainContentArea.innerHTML = '';
-        mainContentArea.innerHTML = generateContactModule();
-    });
-    
-    // VOLVER AL MENU PRINCIPAL
-    const logoLink = document.querySelector('.logo');
-    logoLink.addEventListener('click', (event) => {
-        event.preventDefault();
-        mainContentArea.innerHTML = initialHTML;
-    });
+    const contactLinkNav = document.getElementById('contact-link');
+    if (contactLinkNav) {
+        contactLinkNav.addEventListener('click', (event) => {
+            event.preventDefault(); 
+            mainContentArea.innerHTML = generateContactModule();
+        });
+    }
 });
