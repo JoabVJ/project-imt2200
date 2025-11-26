@@ -9,7 +9,7 @@ function generateContactModule() {
     let htmlContent = `
         <div class="contact-module">
             <h2>Integrantes</h2>
-            <p>Puedes contactarnos directamente para consultas sobre la metodología.</p>
+            <p>Puedes contactarnos directamente para consultas sobre la metodología:</p>
             <div class="contact-list">
     `;
 
