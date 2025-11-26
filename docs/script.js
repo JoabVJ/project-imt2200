@@ -64,7 +64,7 @@ const projectContent = [
 function generateProjectModule() {
     let htmlContent = `
         <div class="project-module">
-            <h1>Enfermades Respiratorias: PRE Y POST <span class="gradient-text">COVID-19</span></h1>
+            <h2>Enfermades Respiratorias: PRE Y POST <span class="gradient-text">COVID-19</span></h2>
             <div class="section-container">
     `;
 
