@@ -203,7 +203,7 @@ p {
 }
 
 .project-section {
-    min-height: 100vh;
+    /* min-height: 100vh; */
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
@@ -213,7 +213,7 @@ p {
 
 
     padding: 2rem;
-    /* height: auto;  */
+    height: auto; 
 
     opacity: 0; 
     transform: translateY(20px);
