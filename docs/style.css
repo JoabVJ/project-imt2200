@@ -191,7 +191,7 @@ p {
 /*------------------------------- PROYECTO --------------------------------------------------------*/
 .project-module {
     padding: 0 5%;
-    max-width: 2000px; /* ancho máximo para el contenido */
+    max-width: 3000px; /* ancho máximo para el contenido */
     margin: 0 auto;
 }
 
