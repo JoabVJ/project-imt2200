@@ -130,16 +130,8 @@ const projectContent = [
                 subcontent: '',
                 media: [
                     { 
-                        src: "graficos/.png", 
+                        src: "graficos/comparacion patologias pre-post covid.png", 
                         caption: "Figura 8" 
-                    },
-                    { 
-                        src: "graficos/.png", 
-                        caption: "Figura 9" 
-                    },
-                    { 
-                        src: "graficos/.png", 
-                        caption: "Figura 10" 
                     }
                 ],
             },
@@ -148,16 +140,12 @@ const projectContent = [
                 subcontent: '',
                 media: [
                     { 
-                        src: "graficos/.png", 
+                        src: "graficos/causa-gurpoetario-pre.png", 
+                        caption: "Figura 9" 
+                    },
+                    { 
+                        src: "graficos/causa-grupoetario.png", 
                         caption: "Figura 10" 
-                    },
-                    { 
-                        src: "graficos/.png", 
-                        caption: "Figura 11" 
-                    },
-                    { 
-                        src: "graficos/.png", 
-                        caption: "Figura 12" 
                     }
                 ],
             }
