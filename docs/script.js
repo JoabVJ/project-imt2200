@@ -153,11 +153,11 @@ const projectContent = [
     },
     { 
         title: 'Conclusión', 
-        content: '',
+        content: 'En base a todas las preguntas anteriores, junto con el análisis de hospitalizaciones pre y post pandemia, concluimos lo siguiente:<br><br><strong>1.</strong> Los resultados muestran un incremento significativo en la cantidad total de hospitalizaciones y atenciones respiratorias en el período post-pandemia (2023–2025) respecto al pre-pandemia (2017–2019).<br><br> - Pre-pandemia: 350.745 atenciones de baja complejidad y 51.222 de alta.<br>- Post-pandemia: 767.660 de baja y 82.580 de alta complejidad. <br><br><strong>Esto refleja un aumento sostenido tanto en el volumen total como en los casos de mayor gravedad.</strong><br><br><strong>2.</strong>Aunque la IRA Alta (J00–J06) se mantiene como la patología predominante en todo el país, los análisis previos muestran que la pandemia modificó la composición y distribución de los casos, generando:<br>- Mayor impacto en grupos etarios mayores, especialmente entre 5 y 64 años.<br>- Un aumento de patologías más severas, como la Neumonía (J12–J18) y las hospitalizaciones asociadas a COVID-19 (U07.1 y U07.2)<br>- Cambios geográficos relevantes, destacando que las regiones del sur del país presentan las tasas más altas de incidencia proporcional por habitante.<br><br><strong>3.</strong> Sobre el nivel de urgencia, se concluye no existe una relación fija entre diagnóstico y gravedad; sin embargo, los años de mayor carga sanitaria (2020–2021) y sus efectos posteriores incrementaron los casos de alta complejidad, tendencia que se mantiene en los años siguientes.<br><br> En conjunto, los resultados evidencian que <strong>tras la pandemia aumentaron tanto la frecuencia como la severidad de las enfermedades respiratorias atendidas en urgencias en Chile</strong>. Si bien las causas más comunes se mantienen, la pandemia amplió su <strong>impacto etario, geográfico y de complejidad</strong>, marcando un cambio estructural en el perfil de las atenciones respiratorias del país',
         details: [
             { 
-                subtitle: '¿Cómo influye el tipo de patología en la clasificación del nivel de urgencia (leve, moderado, grave)?', 
-                subcontent: 'Notamos que no existe una relación fija entre tipo de patología y nivel de urgencia. Esto puede sugerir que la gravedad de la atención no depende directamente del diagnóstico, sino de otros factores externos. Concluimos entonces que el tipo de patología respiratoria no determina de forma directa el nivel de urgencia con que se atiende a un paciente.Existen factores contextuales, demográficos y sanitarios que inciden en la gravedad de las atenciones. Por tanto, la planificación hospitalaria no debería basarse solo en el tipo de enfermedad, sino también en el perfil de la población atendida y el contexto de la población.',
+                subtitle: 'Interpretación de Correlaciones', 
+                subcontent: 'La mayor parte del tiempo, nuestra predicción es bastante buena (error de aprox 1364), pero en ciertas semanas o regiones, la demanda se dispara o cae de una manera que no puede predecir tan bien, y en esos momentos, el error puede ser de 2818 o más.<br><br>Sí, vemos la diferencia entre el <strong>MAE</strong> y el <strong>RMSE</strong> que demuestra estadísticamente que la volatilidad de la demanda aumentó tras la pandemia, ahora existen "picos" de demanda mucho más agresivos que en el pasado, lo que valida que los patrones de consulta sufrieron una modificación estructural post-COVID."',
                 media: [
                     { 
                         src: "graficos/heatmap.png", 
@@ -170,6 +170,10 @@ const projectContent = [
                 ]
 
             },
+            {
+                subtitle: 'Sesgos del Modelo',
+                subcontent: 'La demanda por enfermedades respiratorias según lo visto en la exploración de los datos suele estar dominada por niños pequeños (menores de 5 años) y adultos mayores (65 años o más).<br><br>Entonces, por ejemplo si un año tiene un aumento de niños pequeños en una región en particular, el modelo va a predecir de todas formas el aumento estacional basado en la semana, pero no podrá capturar la magnitud adicional del pico impulsada por esa demografía. El modelo va a predecir un pico alto, pero no va a entender por qué.<br><br>Otro sesgo puede ser con la región, el modelo solo aprende el patrón promedio de la región. Ignora que las subpoblaciones dentro de una región pueden variar drásticamente en susceptibilidad y patrones de consulta.'
+            }
         ]
     },
     { 
