@@ -191,7 +191,7 @@ p {
 /*------------------------------- PROYECTO --------------------------------------------------------*/
 .project-module {
     padding: 0 5%;
-    max-width: 1500px; /* ancho máximo para el contenido */
+    max-width: 2000px; /* ancho máximo para el contenido */
     margin: 0 auto;
 }
 
@@ -203,7 +203,6 @@ p {
 }
 
 .project-section {
-    /* min-height: 100vh; */
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
@@ -214,8 +213,6 @@ p {
     padding: 2rem;
     height: auto; 
 
-    width: 100%;
-    padding: 4rem 10%;
     opacity: 0; 
     transform: translateY(20px);
     animation: fadeInSlide 0.8s forwards;
