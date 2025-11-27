@@ -82,14 +82,14 @@ const projectContent = [
     },
     { 
         title: 'Análisis y Resultados', 
-        content: 'En esta etapa se realizará un análisis de los datos para poder responder las <strong>preguntas de investigación secundarias</strong> y la <strong>pregunta principal</strong> de nuestro proyecto.',
+        content: 'En esta etapa se realizará un análisis de los datos para poder responder las <strong>preguntas de investigación secundarias</strong> y la <strong>pregunta principal</strong> de nuestro proyecto:',
         details: [
             { 
                 subtitle: '¿Cómo influye el tipo de patología en la clasificación del nivel de urgencia (leve, moderado, grave)?', 
                 subcontent: 'FerLeRoi',
                 media: [
                     { 
-                        src: "graficos/bronquitis_año_complejidad.png", 
+                        src: "graficos/bronquitis año complejidad.png", 
                         caption: "Figura 1: Causa Bronquitis" 
                     },
                     { 
