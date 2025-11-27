@@ -137,7 +137,7 @@ const projectContent = [
             },
             {
                 subtitle: '¿Cuál es la relación entre los rangos etarios y la prevalencia de enfermedades respiratorias, y qué patologías son más comunes en cada grupo de edad?',
-                subcontent: 'La patología IRA Alta (J00–J06) se mantiene como la más prevalente en todos los grupos etarios, tanto en el período pre-COVID (2017–2019) como en el post-COVID (2023–2025), evidenciando su persistencia como causa dominante entre las otras causas respiratorias.<br><br>Aunque antes de la pandemia los casos se concentraban principalmente en niños menores de 4 años, en el período posterior se observa un aumento de atenciones en grupos mayores, especialmente entre 5 y 64 años, lo que indica un cambio en el perfil etario afectado<br><br>Este desplazamiento podría explicarse por efectos inmunológicos post-COVID, cambios en la exposición a virus respiratorios tras el fin de las medidas sanitarias, y ajustes en los patrones de atención en el sistema de salud.<br><br>En general, en este objetivo podemos notar que resultados muestran que, si bien la causa predominante no varía, la pandemia modificó la distribución etaria de las enfermedades respiratorias, ampliando su impacto hacia edades mayores y resaltando la importancia de estrategias preventivas más integrales.',
+                subcontent: 'La patología IRA Alta (J00–J06) se mantiene como la más prevalente en todos los grupos etarios, tanto en el período pre-COVID (2017–2019) como en el post-COVID (2023–2025), evidenciando su persistencia como causa dominante entre las otras causas respiratorias.<br><br>Aunque antes de la pandemia los casos se concentraban principalmente en niños menores de 4 años, en el período posterior se observa un aumento de atenciones en grupos mayores, especialmente entre 5 y 64 años, lo que indica un cambio en el perfil etario afectado.<br><br>Este desplazamiento podría explicarse por efectos inmunológicos post-COVID, cambios en la exposición a virus respiratorios tras el fin de las medidas sanitarias, y ajustes en los patrones de atención en el sistema de salud.<br><br>En general, en este objetivo podemos notar que resultados muestran que, si bien la causa predominante no varía, la pandemia modificó la distribución etaria de las enfermedades respiratorias, ampliando su impacto hacia edades mayores y resaltando la importancia de estrategias preventivas más integrales.',
                 media: [
                     { 
                         src: "graficos/causa-gurpoetario-pre.png", 
@@ -182,6 +182,8 @@ const projectContent = [
             { text: 'Repositorio del Proyecto', url: 'https://github.com/JoabVJ/proyecto_imt2200' },
             { text: 'Datos Originales - Gob', url: 'https://datos.gob.cl/dataset/atenciones-de-urgencia-causas-respiratorias' },
             { text: 'Ministerio de Salud', url: 'https://www.minsal.cl/' },
+            { text: 'Overflow', url: 'https://stackoverflow.com/questions/2595176/which-machine-learning-classifier-to-choose-in-general'},
+            { text: 'Apoyo con IA, sólo para la base del diseño'}
         ]
     }
 ];
