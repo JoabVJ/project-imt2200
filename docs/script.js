@@ -82,11 +82,25 @@ const projectContent = [
     },
     { 
         title: 'Análisis y Resultados', 
-        content: 'A',
-    },
-    { 
-        title: 'Interpretación', 
-        content: 'A',
+        content: 'En esta etapa se realizará un análisis de los datos para poder responder las <strong>preguntas de investigación secundarias</strong> y la <strong>pregunta principal</strong> de nuestro proyecto.',
+        details: [
+            { 
+                subtitle: '¿Cómo influye el tipo de patología en la clasificación del nivel de urgencia (leve, moderado, grave)?', 
+                subcontent: ''
+            },
+            {
+                subtitle: '¿Existen regiones/comunas con una mayor incidencia de enfermedades respiratorias?',
+                subcontent: ''
+            },
+            {
+                subtitle: '¿Qué patologías respiratorias han sido más prevalentes en la última década y cómo ha cambiado su distribución a lo largo de los años?',
+                subcontent: ''
+            },
+            {
+                subtitle: '¿Cuál es la relación entre los rangos etarios y la prevalencia de enfermedades respiratorias, y qué patologías son más comunes en cada grupo de edad?',
+                subcontent: ''
+            }
+        ]
     },
     { 
         title: 'Links Relevantes', 
