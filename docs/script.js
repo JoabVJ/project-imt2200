@@ -34,10 +34,18 @@ function generateContactModule() {
 // <br>
 const projectContent = [
     { 
-        title: 'Introducción', 
+        title: 'Descripción de Problema', 
         content: 'La pandemia de COVID-19 produjo un cambio radical en los patrones de consulta por enfermedades respiratorias en los servicios de urgencia. Antes del 2020, la frecuencia con la que se presenciaban virus respiratorios como influenza, virus sincicial y adenovirus determinaba los flujos de pacientes. Sin embargo, tras las medidas de confinamiento, el uso de mascarillas y el cambio en conductas sociales, se observaron variaciones en la incidencia y distribución de estas patologías.<br>La motivación de este proyecto es analizar si, efectivamente, la pandemia alteró la cantidad de atenciones por enfermedades respiratorias en urgencias y si estas modificaciones se han mantenido en los años posteriores al confinamiento. El problema es relevante porque los servicios de urgencia deben planificar sus recursos humanos y materiales de acuerdo a la demanda, y comprender estas tendencias puede facilitar la preparación frente a futuras crisis sanitarias.',
-        subtitle: 'Objetivo General',
-        subcontent: 'Analizar la evolución de las consultas por enfermedades respiratorias en servicios de urgencia en Chile, comparando el periodo previo y posterior a la pandemia de COVID-19, para identificar tendencias y cambios significativos.'
+        details: [
+            { 
+                subtitle: 'Objetivo General', 
+                subcontent: 'Analizar la evolución de las consultas por enfermedades respiratorias en servicios de urgencia en Chile, comparando el periodo previo y posterior a la pandemia de COVID-19, para identificar tendencias y cambios significativos.'
+            },
+            { 
+                subtitle: 'Pregunta Principal', 
+                subcontent: '¿Se ha observado un aumento de las enfermedades respiratorias que motivan consultas en urgencias tras la pandemia, en comparación con el periodo previo al COVID-19?'
+            }
+        ]
     },
     { 
         title: 'Descripción del Problema', 
