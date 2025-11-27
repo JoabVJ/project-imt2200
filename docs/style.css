@@ -18,8 +18,11 @@ body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-    height: 100vh;
+    /* height: 100vh; */
     position: relative;
+    height: 100;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
 }
 
 a { text-decoration: none; color: inherit; transition: 0.3s; }
@@ -187,7 +190,7 @@ p {
 }
 /*------------------------------- PROYECTO --------------------------------------------------------*/
 .project-module {
-    padding: 2rem 5%;
+    padding: 0 5%;
     max-width: 1200px; /* ancho máximo para el contenido */
     margin: 0 auto;
 }
@@ -199,17 +202,18 @@ p {
     color: var(--accent-color);
 }
 
-.section-container {
-    display: grid;
-    /*columnas de ancho mínimo de 300px*/
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    gap: 30px;
-    align-items: start; 
-}
-
 .project-section {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+
+
     padding: 2rem;
-    height: auto; 
+    /* height: auto;  */
     opacity: 0; 
     transform: translateY(20px);
     animation: fadeInSlide 0.8s forwards;
