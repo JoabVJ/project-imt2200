@@ -86,7 +86,7 @@ const projectContent = [
         details: [
             { 
                 subtitle: '¿Cómo influye el tipo de patología en la clasificación del nivel de urgencia (leve, moderado, grave)?', 
-                subcontent: 'FerLeRoi',
+                subcontent: 'Notamos que no existe una relación fija entre tipo de patología y nivel de urgencia. Esto puede sugerir que la gravedad de la atención no depende directamente del diagnóstico, sino de otros factores externos. Concluimos entonces que el tipo de patología respiratoria no determina de forma directa el nivel de urgencia con que se atiende a un paciente.Existen factores contextuales, demográficos y sanitarios que inciden en la gravedad de las atenciones. Por tanto, la planificación hospitalaria no debería basarse solo en el tipo de enfermedad, sino también en el perfil de la población atendida y el contexto de la población.',
                 media: [
                     { 
                         src: "graficos/bronquitis año complejidad.png", 
@@ -105,15 +105,61 @@ const projectContent = [
             },
             {
                 subtitle: '¿Existen regiones/comunas con una mayor incidencia de enfermedades respiratorias?',
-                subcontent: ''
+                subcontent: '',
+                media: [
+                    { 
+                        src: "graficos/outputcausas por region(total hospitalizaciones).png", 
+                        caption: "Figura 4" 
+                    },
+                    { 
+                        src: "graficos/top 2 causas por region.png", 
+                        caption: "Figura 5" 
+                    },
+                    { 
+                        src: "graficos/hospitalizaciones por region.png", 
+                        caption: "Figura 6" 
+                    },
+                    { 
+                        src: "graficos/causas por region.png", 
+                        caption: "Figura 7" 
+                    }
+                ],
             },
             {
                 subtitle: '¿Qué patologías respiratorias han sido más prevalentes en la última década y cómo ha cambiado su distribución a lo largo de los años?',
-                subcontent: ''
+                subcontent: '',
+                media: [
+                    { 
+                        src: "graficos/.png", 
+                        caption: "Figura 8" 
+                    },
+                    { 
+                        src: "graficos/.png", 
+                        caption: "Figura 9" 
+                    },
+                    { 
+                        src: "graficos/.png", 
+                        caption: "Figura 10" 
+                    }
+                ],
             },
             {
                 subtitle: '¿Cuál es la relación entre los rangos etarios y la prevalencia de enfermedades respiratorias, y qué patologías son más comunes en cada grupo de edad?',
-                subcontent: ''
+                subcontent: '',
+                media: [
+                    { 
+                        src: "graficos/.png", 
+                        caption: "Figura 10" 
+                    },
+                    { 
+                        src: "graficos/.png", 
+                        caption: "Figura 11" 
+                    },
+                    { 
+                        src: "graficos/.png", 
+                        caption: "Figura 12" 
+                    }
+                ],
             }
         ]
     },
@@ -130,7 +176,7 @@ const projectContent = [
 function generateProjectModule() {
     let htmlContent = `
     <div class="project-module">
-            <h1>Enfermades Respiratorias: <span class="gradient-text">PRE Y POST COVID-19</span></h1>
+            <h1>Enfermedades Respiratorias: <span class="gradient-text">PRE Y POST COVID-19</span></h1>
             <div class="section-container">
     `;
 
