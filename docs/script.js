@@ -65,7 +65,7 @@ const projectContent = [
         details: [
             { 
                 subtitle: 'Variables Principales', 
-                subcontent: 'EstablecimientoCodigo: Identificador único del establecimiento.<br><strong>RegionGlosa / ComunaGlosa:</strong> Región y comuna donde se ubica el establecimiento.<br><strong>Causa:</strong> Tipo de enfermedad respiratoria (ej. influenza, virus sincicial, adenovirus).<br><strong>Anio / SemanaEstadistica:</strong> Año y semana epidemiológica del registro.<br><strong>NumTotal:</strong> Número total de consultas por causas respiratorias.<br><strong>NumMenor1Anio, Num1a4Anios, Num5a14Anios, Num15a64Anios, Num65Mas:</strong> Distribución de consultas por grupo etario.<br><strong>NivelAtencion / TipoEstablecimiento / NivelComplejidad:</strong> Clasificación administrativa y operativa del centro de salud.'
+                subcontent: '<strong>EstablecimientoCodigo:</strong> Identificador único del establecimiento.<br><strong>RegionGlosa / ComunaGlosa:</strong> Región y comuna donde se ubica el establecimiento.<br><strong>Causa:</strong> Tipo de enfermedad respiratoria (ej. influenza, virus sincicial, adenovirus).<br><strong>Anio / SemanaEstadistica:</strong> Año y semana epidemiológica del registro.<br><strong>NumTotal:</strong> Número total de consultas por causas respiratorias.<br><strong>NumMenor1Anio, Num1a4Anios, Num5a14Anios, Num15a64Anios, Num65Mas:</strong> Distribución de consultas por grupo etario.<br><strong>NivelAtencion / TipoEstablecimiento / NivelComplejidad:</strong> Clasificación administrativa y operativa del centro de salud.'
             },
         ]
         // imageSrc: "IMAGES/grafico.png"
