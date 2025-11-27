@@ -90,15 +90,15 @@ const projectContent = [
                 media: [
                     { 
                         src: "graficos/bronquitis año complejidad.png", 
-                        caption: "Figura 1: Causa Bronquitis" 
+                        caption: "Figura 1" 
                     },
                     { 
                         src: "graficos/covid no identificador por año y complejiadd.png", 
-                        caption: "Figura 2: Causa Covid-19" 
+                        caption: "Figura 2" 
                     },
                     { 
                         src: "graficos/ira por ño y complejiadd.png", 
-                        caption: "Figura 3: Causa Ira" 
+                        caption: "Figura 3" 
                     }
                 ],
 
