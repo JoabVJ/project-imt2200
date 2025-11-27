@@ -152,6 +152,27 @@ const projectContent = [
         ]
     },
     { 
+        title: 'Conclusión', 
+        content: '',
+        details: [
+            { 
+                subtitle: '¿Cómo influye el tipo de patología en la clasificación del nivel de urgencia (leve, moderado, grave)?', 
+                subcontent: 'Notamos que no existe una relación fija entre tipo de patología y nivel de urgencia. Esto puede sugerir que la gravedad de la atención no depende directamente del diagnóstico, sino de otros factores externos. Concluimos entonces que el tipo de patología respiratoria no determina de forma directa el nivel de urgencia con que se atiende a un paciente.Existen factores contextuales, demográficos y sanitarios que inciden en la gravedad de las atenciones. Por tanto, la planificación hospitalaria no debería basarse solo en el tipo de enfermedad, sino también en el perfil de la población atendida y el contexto de la población.',
+                media: [
+                    { 
+                        src: "graficos/heatmap.png", 
+                        caption: "Figura 11" 
+                    },
+                    { 
+                        src: "graficos/output.png", 
+                        caption: "Figura 12" 
+                    }
+                ]
+
+            },
+        ]
+    },
+    { 
         title: 'Links Relevantes', 
         links: [
             { text: 'Repositorio del Proyecto', url: 'https://github.com/JoabVJ/proyecto_imt2200' },
