@@ -207,10 +207,9 @@ p {
     scroll-snap-align: start;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: flex-start;
     text-align: left;
-
+    margin-bottom: 50px;
 
     padding: 2rem;
     height: auto; 
