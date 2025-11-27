@@ -112,13 +112,15 @@ function generateProjectModule() {
         }
 
         // SUBTITULO PARA INTRODUCCION
-        if (section.subtitle && section.subcontent) {
-            htmlContent += `
-                <div class="sub-section">
-                    <h4>${section.subtitle}</h4>
-                    <p>${section.subcontent}</p>
-                </div>
-            `;
+        if (section.details && Array.isArray(section.details)) {
+            section.details.forEach(detail => {
+                htmlContent += `
+                    <div class="sub-section">
+                        <h4>${detail.subtitle}</h4>
+                        <p>${detail.subcontent}</p>
+                    </div>
+                `;
+            });
         }
 
         // PROCESAMIENTO DE INFORMACION
