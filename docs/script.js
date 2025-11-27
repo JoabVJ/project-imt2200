@@ -143,7 +143,7 @@ function generateProjectModule() {
                 `;
             });
         }
-                if (section.imageSrc) {
+                if (detail.imageSrc) {
                     htmlContent += `
                         <figure class="media-container">
                             <img src="${detail.imageSrc}" alt="Gráfico de ${detail.subtitle}" class="project-image">  
