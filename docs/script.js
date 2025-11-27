@@ -50,7 +50,7 @@ const projectContent = [
         details: [
             { 
                 subtitle: 'Pregunta Principal', 
-                subcontent: '¿Se ha observado un aumento de las enfermedades respiratorias que motivan consultas en urgencias tras la pandemia, en comparación con el periodo previo al COVID-19?'
+                subcontent: '<strong>¿Se ha observado un aumento de las enfermedades respiratorias que motivan consultas en urgencias tras la pandemia, en comparación con el periodo previo al COVID-19?</strong>'
             },
             {
                 subtitle: 'Otras preguntas de investigación',
@@ -65,12 +65,8 @@ const projectContent = [
         details: [
             { 
                 subtitle: 'Variables Principales', 
-                subcontent: ''
+                subcontent: 'EstablecimientoCodigo: Identificador único del establecimiento.<br><strong>RegionGlosa / ComunaGlosa:</strong> Región y comuna donde se ubica el establecimiento.<br><strong>Causa:</strong> Tipo de enfermedad respiratoria (ej. influenza, virus sincicial, adenovirus).<br><strong>Anio / SemanaEstadistica:</strong> Año y semana epidemiológica del registro.<br><strong>NumTotal:</strong> Número total de consultas por causas respiratorias.<br><strong>NumMenor1Anio, Num1a4Anios, Num5a14Anios, Num15a64Anios, Num65Mas:</strong> Distribución de consultas por grupo etario.<br><strong>NivelAtencion / TipoEstablecimiento / NivelComplejidad:</strong> Clasificación administrativa y operativa del centro de salud.'
             },
-            {
-                subtitle: 'Otras preguntas de investigación',
-                subcontent: '    1. ¿Cómo influye el tipo de patología en la clasificación del nivel de urgencia (leve, moderado, grave)?<br>    2. ¿Existen regiones/comunas con una mayor incidencia de enfermedades respiratorias?<br>    3. ¿Qué patologías respiratorias han sido más prevalentes en la última década y cómo ha cambiado su distribución a lo largo de los años?<br>    4. ¿Cuál es la relación entre los rangos etarios y la prevalencia de enfermedades respiratorias, y qué patologías son más comunes en cada grupo de edad?'
-            }
         ]
         // imageSrc: "IMAGES/grafico.png"
     },
