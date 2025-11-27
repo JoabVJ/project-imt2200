@@ -30,6 +30,7 @@ function generateContactModule() {
 
     return htmlContent;
 }
+
 // PROYECTO COMOT AL
 // <br>
 const projectContent = [
@@ -48,7 +49,7 @@ const projectContent = [
         content: 'Para orientar el análisis de los datos, se define en primer lugar una pregunta de investigación principal, que actúa como eje central del proyecto y establece el foco del estudio. Sin embargo, para responderla de manera adecuada resulta necesario formular además un conjunto de preguntas secundarias, que permiten caracterizar en mayor detalle el fenómeno estudiado y aportar el contexto necesario para comprender por qué podría haberse producido (o no) un aumento en la demanda de atenciones por enfermedades respiratorias en los servicios de urgencias.',
         details: [
             { 
-                subtitle: 'Pregunta Principal', 
+                subtitle: '<strong>Pregunta Principal</strong>', 
                 subcontent: '¿Se ha observado un aumento de las enfermedades respiratorias que motivan consultas en urgencias tras la pandemia, en comparación con el periodo previo al COVID-19?'
             },
             {
@@ -60,7 +61,7 @@ const projectContent = [
     },
     { 
         title: 'Datos Utilizados', 
-        content: 'A',
+        content: 'Los datos utilizados provienen de la Plataforma de Datos Abiertos del Gobierno de Chile, específicamente del conjunto <strong>“Atenciones de Urgencia por Causas Respiratorias”</strong>.<br>El registro se realiza semanalmente e incluye información sobre las atenciones por enfermedades respiratorias en establecimientos de salud de todo el país, principalmente del sector público.<br>Cada fila del dataset representa un establecimiento en una semana específica, e incluye tanto variables administrativas como epidemiológicas.',
         // subtitle: 'Objetivos',
         // subcontent: ''
         // imageSrc: "IMAGES/grafico.png"
