@@ -49,21 +49,29 @@ const projectContent = [
         content: 'Para orientar el análisis de los datos, se define en primer lugar una pregunta de investigación principal, que actúa como eje central del proyecto y establece el foco del estudio. Sin embargo, para responderla de manera adecuada resulta necesario formular además un conjunto de preguntas secundarias, que permiten caracterizar en mayor detalle el fenómeno estudiado y aportar el contexto necesario para comprender por qué podría haberse producido (o no) un aumento en la demanda de atenciones por enfermedades respiratorias en los servicios de urgencias.',
         details: [
             { 
-                subtitle: '<strong>Pregunta Principal</strong>', 
+                subtitle: 'Pregunta Principal', 
                 subcontent: '¿Se ha observado un aumento de las enfermedades respiratorias que motivan consultas en urgencias tras la pandemia, en comparación con el periodo previo al COVID-19?'
             },
             {
                 subtitle: 'Otras preguntas de investigación',
-                subcontent: '    1.¿Cómo influye el tipo de patología en la clasificación del nivel de urgencia (leve, moderado, grave)?<br>    2.¿Existen regiones/comunas con una mayor incidencia de enfermedades respiratorias?<br>    3.¿Qué patologías respiratorias han sido más prevalentes en la última década y cómo ha cambiado su distribución a lo largo de los años?<br>    4.¿Cuál es la relación entre los rangos etarios y la prevalencia de enfermedades respiratorias, y qué patologías son más comunes en cada grupo de edad?'
+                subcontent: '    <strong>1.</strong> ¿Cómo influye el tipo de patología en la clasificación del nivel de urgencia (leve, moderado, grave)?<br>    <strong>2.</strong> ¿Existen regiones/comunas con una mayor incidencia de enfermedades respiratorias?<br>    <strong>3.</strong> ¿Qué patologías respiratorias han sido más prevalentes en la última década y cómo ha cambiado su distribución a lo largo de los años?<br>    <strong>4.</strong> ¿Cuál es la relación entre los rangos etarios y la prevalencia de enfermedades respiratorias, y qué patologías son más comunes en cada grupo de edad?'
             }
         ]
         // imageSrc: "IMAGES/grafico.png"
     },
     { 
         title: 'Datos Utilizados', 
-        content: 'Los datos utilizados provienen de la Plataforma de Datos Abiertos del Gobierno de Chile, específicamente del conjunto <strong>“Atenciones de Urgencia por Causas Respiratorias”</strong>.<br>El registro se realiza semanalmente e incluye información sobre las atenciones por enfermedades respiratorias en establecimientos de salud de todo el país, principalmente del sector público.<br>Cada fila del dataset representa un establecimiento en una semana específica, e incluye tanto variables administrativas como epidemiológicas.',
-        // subtitle: 'Objetivos',
-        // subcontent: ''
+        content: 'Los datos utilizados provienen de la Plataforma de Datos Abiertos del Gobierno de Chile, específicamente del conjunto <strong>“Atenciones de Urgencia por Causas Respiratorias”</strong>.<br>El registro se realiza semanalmente e incluye información sobre las atenciones por enfermedades respiratorias en establecimientos de salud de todo el país, principalmente del sector público.<br>Cada fila del dataset representa un <strong>establecimiento en una semana específica</strong>, e incluye tanto <strong>variables administrativas</strong> como <strong>epidemiológicas</strong>.',
+        details: [
+            { 
+                subtitle: 'Variables Principales', 
+                subcontent: ''
+            },
+            {
+                subtitle: 'Otras preguntas de investigación',
+                subcontent: '    1. ¿Cómo influye el tipo de patología en la clasificación del nivel de urgencia (leve, moderado, grave)?<br>    2. ¿Existen regiones/comunas con una mayor incidencia de enfermedades respiratorias?<br>    3. ¿Qué patologías respiratorias han sido más prevalentes en la última década y cómo ha cambiado su distribución a lo largo de los años?<br>    4. ¿Cuál es la relación entre los rangos etarios y la prevalencia de enfermedades respiratorias, y qué patologías son más comunes en cada grupo de edad?'
+            }
+        ]
         // imageSrc: "IMAGES/grafico.png"
     },
     { 
