@@ -116,7 +116,7 @@ const projectContent = [
 
 function generateProjectModule() {
     let htmlContent = `
-        <div class="project-module">
+    <div class="project-module">
             <h1>Enfermades Respiratorias: <span class="gradient-text">PRE Y POST COVID-19</span></h1>
             <div class="section-container">
     `;
@@ -126,7 +126,7 @@ function generateProjectModule() {
             <section class="project-section glass-card" data-index="${index}">
                 <h3 class="section-title">${section.title}</h3>
         `;
-        
+
         // TITULO CONTENIDO PRINCIPAL
         if (section.content) {
             htmlContent += `<p class="main-content">${section.content}</p>`;
@@ -139,19 +139,22 @@ function generateProjectModule() {
                     <div class="sub-section">
                         <h4>${detail.subtitle}</h4>
                         <p>${detail.subcontent}</p>
-                    </div>
-                `;
-            });
-        }
+            `;
+                // AÑADIMOS LA LÓGICA DE LA IMAGEN AQUÍ (DENTRO DEL BUCLE)
                 if (detail.imageSrc) {
                     htmlContent += `
                         <figure class="media-container">
-                            <img src="${detail.imageSrc}" alt="Gráfico de ${detail.subtitle}" class="project-image">  
+                            <img src="${detail.imageSrc}" alt="Gráfico de ${detail.subtitle}" class="project-image">  
                             ${detail.imageCaption ? `<figcaption>${detail.imageCaption}</figcaption>` : ''}
                         </figure>
                     `;
                 }
-            
+                
+                htmlContent += `
+                    </div>
+                `;
+            });
+        }
         // REPOSITORIOS / LINKS
         if (section.links) {
             htmlContent += `<ul class="repo-list">`;
