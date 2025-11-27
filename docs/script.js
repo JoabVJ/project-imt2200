@@ -61,7 +61,7 @@ const projectContent = [
     },
     { 
         title: 'Datos Utilizados', 
-        content: 'Los datos utilizados provienen de la Plataforma de Datos Abiertos del Gobierno de Chile, específicamente del conjunto <strong>“Atenciones de Urgencia por Causas Respiratorias”</strong>.<br>El registro se realiza semanalmente e incluye información sobre las atenciones por enfermedades respiratorias en establecimientos de salud de todo el país, principalmente del sector público.<br>Cada fila del dataset representa un <strong>establecimiento en una semana específica</strong>, e incluye tanto <strong>variables administrativas</strong> como <strong>epidemiológicas</strong>.',
+        content: 'Los datos utilizados provienen de la Plataforma de Datos Abiertos del Gobierno de Chile, específicamente del conjunto <strong>“Atenciones de Urgencia por Causas Respiratorias”</strong>.<br>El registro se realiza semanalmente e incluye información sobre las atenciones por enfermedades respiratorias en establecimientos de salud de todo el país, principalmente del sector público.<br>Cada fila del dataset representa un <strong>establecimiento en una semana específica</strong>, e incluye tanto <strong>variables administrativas</strong> como <strong>epidemiológicas</strong>.<br>En términos generales, el dataset contiene múltiples años (2013 en adelante) y permite analizar la <strong>evolución temporal</strong>, <strong>distribución geográfica y diferencias por edad o tipo de patología</strong> en las consultas de urgencia respiratoria en Chile.<br>Antes de realizar el análisis exploratorio, es necesario definir la estrategia de procesamiento que seguiremos con los datos',
         details: [
             { 
                 subtitle: 'Variables Principales', 
