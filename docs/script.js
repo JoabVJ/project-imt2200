@@ -105,7 +105,7 @@ const projectContent = [
             },
             {
                 subtitle: '¿Existen regiones/comunas con una mayor incidencia de enfermedades respiratorias?',
-                subcontent: '',
+                subcontent: 'Chile cuenta con 16 regiones y más de 340 comunas, por lo que un análisis comunal sería demasiado extenso. Para simplificar el estudio, se decidió realizar el análisis a nivel regional.<br><br>Tras filtrar estos registros, se determinó que la IRA Alta (J00-J06) es la causa respiratoria más frecuente en todas las regiones del país.<br>Al comparar los totales acumulados por región, la Región Metropolitana de Santiago presenta el mayor número absoluto de hospitalizaciones respiratorias, seguida por Biobío, Maule y Valparaíso. No obstante, esta diferencia puede estar influenciada por el tamaño poblacional.<br><br>Esto evidencia que, aunque los casos absolutos se concentran en las zonas más pobladas, la incidencia proporcional es mayor en regiones dentro del país, que en la capital y Regiones cercanas a la capital.',
                 media: [
                     { 
                         src: "graficos/outputcausas por region(total hospitalizaciones).png", 
@@ -127,7 +127,7 @@ const projectContent = [
             },
             {
                 subtitle: '¿Qué patologías respiratorias han sido más prevalentes en la última década y cómo ha cambiado su distribución a lo largo de los años?',
-                subcontent: '',
+                subcontent: 'Para este análisis se consideraron los años 2017–2019 (periodo pre-COVID) y 2023–2025 (periodo post-COVID). Los años intermedios (2020–2022) fueron excluidos debido a la fuerte alteración que produjo la pandemia en la atención de urgencias y la disponibilidad de registros.<br><br>Las patologías <strong>IRA Alta (J00–J06) y Bronquitis/Bronquiolitis aguda (J20–J21)</strong> se mantienen como las más frecuentes tanto antes como después del COVID-19<br><br>Algunas patologías, como <strong>Neumonía (J12–J18)</strong>, muestran un <strong>aumento leve en el periodo post-COVID</strong>, lo que podría reflejar secuelas o mayor susceptibilidad respiratoria.En cambio, las crisis obstructivas bronquiales y las “otras causas respiratorias” disminuyen ligeramente, situándose bajo la diagonal.<br><br>En conjunto, el gráfico evidencia que, aunque la distribución general de patologías respiratorias se mantiene, la pandemia introdujo un cambio importante en la magnitud y composición de las atenciones respiratorias.',
                 media: [
                     { 
                         src: "graficos/comparacion patologias pre-post covid.png", 
@@ -137,7 +137,7 @@ const projectContent = [
             },
             {
                 subtitle: '¿Cuál es la relación entre los rangos etarios y la prevalencia de enfermedades respiratorias, y qué patologías son más comunes en cada grupo de edad?',
-                subcontent: '',
+                subcontent: 'La patología IRA Alta (J00–J06) se mantiene como la más prevalente en todos los grupos etarios, tanto en el período pre-COVID (2017–2019) como en el post-COVID (2023–2025), evidenciando su persistencia como causa dominante entre las otras causas respiratorias.<br><br>Aunque antes de la pandemia los casos se concentraban principalmente en niños menores de 4 años, en el período posterior se observa un aumento de atenciones en grupos mayores, especialmente entre 5 y 64 años, lo que indica un cambio en el perfil etario afectado<br><br>Este desplazamiento podría explicarse por efectos inmunológicos post-COVID, cambios en la exposición a virus respiratorios tras el fin de las medidas sanitarias, y ajustes en los patrones de atención en el sistema de salud.<br><br>En general, en este objetivo podemos notar que resultados muestran que, si bien la causa predominante no varía, la pandemia modificó la distribución etaria de las enfermedades respiratorias, ampliando su impacto hacia edades mayores y resaltando la importancia de estrategias preventivas más integrales.',
                 media: [
                     { 
                         src: "graficos/causa-gurpoetario-pre.png", 
