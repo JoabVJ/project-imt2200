@@ -88,7 +88,7 @@ const projectContent = [
                 subtitle: '¿Cómo influye el tipo de patología en la clasificación del nivel de urgencia (leve, moderado, grave)?', 
                 imageSrc: "graficos/bronquitis año complejidad.png",
                 imageCaption: "Bronquitis",
-                subcontent: 'FerLeRua',
+                subcontent: 'FerLeRoi',
             },
             {
                 subtitle: '¿Existen regiones/comunas con una mayor incidencia de enfermedades respiratorias?',
