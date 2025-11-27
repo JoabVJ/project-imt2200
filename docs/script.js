@@ -39,8 +39,31 @@ const projectContent = [
         subcontent: 'Determinar los cambios en la tasa de hospitalización y analizar la correlación entre las políticas de distanciamiento social y la incidencia de enfermedades comunes (gripe, VRS).'
     },
     { 
-        title: 'Procesamiento de Información', 
-        content: `La recolección de datos se realizó a través de fuentes públicas (Ministerio de Salud) para los años 2018 a 2022. Utilizamos **JavaScript** para limpiar y normalizar los conjuntos de datos, asegurando la coherencia entre las métricas PRE y POST pandemia.`,
+        title: 'Descripción del Problema', 
+        content: 'Este proyecto de IMT2200 analiza las tendencias en las enfermedades respiratorias antes y después del impacto de la COVID-19, enfocándose en la infraestructura de salud pública y la respuesta social.',
+        // subtitle: 'Objetivos',
+        // subcontent: ''
+        // imageSrc: "IMAGES/grafico.png"
+    },
+    { 
+        title: 'Datos Utilizados', 
+        content: 'Este proyecto de IMT2200 analiza las tendencias en las enfermedades respiratorias antes y después del impacto de la COVID-19, enfocándose en la infraestructura de salud pública y la respuesta social.',
+        // subtitle: 'Objetivos',
+        // subcontent: ''
+        // imageSrc: "IMAGES/grafico.png"
+    },
+    { 
+        title: 'Metodología', 
+        content: 'Este proyecto de IMT2200 analiza las tendencias en las enfermedades respiratorias antes y después del impacto de la COVID-19, enfocándose en la infraestructura de salud pública y la respuesta social.',
+        // subtitle: 'Objetivos',
+        // subcontent: ''
+        // imageSrc: "IMAGES/grafico.png"
+    },
+    { 
+        title: 'Proceso de ETL / Procesamiento Info', 
+        content: 'Este proyecto de IMT2200 analiza las tendencias en las enfermedades respiratorias antes y después del impacto de la COVID-19, enfocándose en la infraestructura de salud pública y la respuesta social.',
+        // subtitle: 'Objetivos',
+        // subcontent: ''
         // imageSrc: "IMAGES/grafico.png"
     },
     { 
@@ -48,7 +71,7 @@ const projectContent = [
         content: 'El análisis muestra un claro descenso en las enfermedades respiratorias comunes durante el confinamiento (2020) y un aumento significativo en la sobrecarga del sistema en los años posteriores (2022). Se observó una correlación negativa del -0.75 entre el distanciamiento social y la incidencia de gripe.',
     },
     { 
-        title: 'Retroalimentación', 
+        title: 'Interpretación', 
         content: 'Recibimos comentarios valiosos de profesores y expertos en salud pública, lo que llevó a recalcular las tasas ajustadas por población para mejorar la precisión del análisis.',
     },
     { 
@@ -135,7 +158,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (logoLink) {
         logoLink.addEventListener('click', (event) => {
             event.preventDefault();
-            mainContentArea.innerHTML = initialHTML; // Inyecta la tarjeta inicial
+            mainContentArea.innerHTML = initialHTML; 
         });
     }
 
@@ -143,7 +166,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (contactLinkNav) {
         contactLinkNav.addEventListener('click', (event) => {
             event.preventDefault(); 
-            mainContentArea.innerHTML = generateContactModule(); // Inyecta la vista de Contactos
+            mainContentArea.innerHTML = generateContactModule(); //Parte de Contactos
         });
     }
 
