@@ -41,17 +41,21 @@ const projectContent = [
                 subtitle: 'Objetivo General', 
                 subcontent: 'Analizar la evolución de las consultas por enfermedades respiratorias en servicios de urgencia en Chile, comparando el periodo previo y posterior a la pandemia de COVID-19, para identificar tendencias y cambios significativos.'
             },
-            { 
-                subtitle: 'Pregunta Principal', 
-                subcontent: '¿Se ha observado un aumento de las enfermedades respiratorias que motivan consultas en urgencias tras la pandemia, en comparación con el periodo previo al COVID-19?'
-            }
         ]
     },
     { 
-        title: 'Descripción del Problema', 
-        content: 'A',
-        // subtitle: 'Objetivos',
-        // subcontent: ''
+        title: 'Preguntas de Investigación', 
+        content: 'Para orientar el análisis de los datos, se define en primer lugar una pregunta de investigación principal, que actúa como eje central del proyecto y establece el foco del estudio. Sin embargo, para responderla de manera adecuada resulta necesario formular además un conjunto de preguntas secundarias, que permiten caracterizar en mayor detalle el fenómeno estudiado y aportar el contexto necesario para comprender por qué podría haberse producido (o no) un aumento en la demanda de atenciones por enfermedades respiratorias en los servicios de urgencias.',
+        details: [
+            { 
+                subtitle: 'Pregunta Principal', 
+                subcontent: '¿Se ha observado un aumento de las enfermedades respiratorias que motivan consultas en urgencias tras la pandemia, en comparación con el periodo previo al COVID-19?'
+            },
+            {
+                subtitle: 'Otras preguntas de investigación',
+                subcontent: '    1.¿Cómo influye el tipo de patología en la clasificación del nivel de urgencia (leve, moderado, grave)?<br>    2.¿Existen regiones/comunas con una mayor incidencia de enfermedades respiratorias?<br>    3.¿Qué patologías respiratorias han sido más prevalentes en la última década y cómo ha cambiado su distribución a lo largo de los años?<br>    4.¿Cuál es la relación entre los rangos etarios y la prevalencia de enfermedades respiratorias, y qué patologías son más comunes en cada grupo de edad?'
+            }
+        ]
         // imageSrc: "IMAGES/grafico.png"
     },
     { 
