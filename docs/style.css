@@ -18,11 +18,8 @@ body {
     font-family: 'Outfit', sans-serif;
     background-color: var(--bg-color);
     color: var(--text-color);
-    /* height: 100vh; */
     position: relative;
-    height: 100;
     overflow-y: scroll;
-    scroll-snap-type: y mandatory;
 }
 
 a { text-decoration: none; color: inherit; transition: 0.3s; }
