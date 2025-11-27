@@ -86,9 +86,22 @@ const projectContent = [
         details: [
             { 
                 subtitle: '¿Cómo influye el tipo de patología en la clasificación del nivel de urgencia (leve, moderado, grave)?', 
-                imageSrc: "graficos/bronquitis año complejidad.png",
-                imageCaption: "Bronquitis",
                 subcontent: 'FerLeRoi',
+                media: [
+                    { 
+                        src: "graficos/bronquitis_año_complejidad.png", 
+                        caption: "Figura 1: Causa Bronquitis" 
+                    },
+                    { 
+                        src: "graficos/covid no identificador por año y complejiadd.png", 
+                        caption: "Figura 2: Causa Covid-19" 
+                    },
+                    { 
+                        src: "graficos/ira por ño y complejiadd.png", 
+                        caption: "Figura 3: Causa Ira" 
+                    }
+                ],
+
             },
             {
                 subtitle: '¿Existen regiones/comunas con una mayor incidencia de enfermedades respiratorias?',
@@ -141,13 +154,15 @@ function generateProjectModule() {
                         <p>${detail.subcontent}</p>
             `;
                 // AÑADIMOS LA LÓGICA DE LA IMAGEN AQUÍ (DENTRO DEL BUCLE)
-                if (detail.imageSrc) {
-                    htmlContent += `
-                        <figure class="media-container">
-                            <img src="${detail.imageSrc}" alt="Gráfico de ${detail.subtitle}" class="project-image">  
-                            ${detail.imageCaption ? `<figcaption>${detail.imageCaption}</figcaption>` : ''}
-                        </figure>
-                    `;
+                if (detail.media && Array.isArray(detail.media)) {
+                    detail.media.forEach((item, mediaIndex) => {
+                        htmlContent += `
+                            <figure class="media-container">
+                                <img src="${item.src}" alt="Gráfico ${detail.subtitle} ${mediaIndex + 1}" class="project-image">  
+                                ${item.caption ? `<figcaption>${item.caption}</figcaption>` : ''}
+                            </figure>
+                        `;
+                    }); 
                 }
                 
                 htmlContent += `
