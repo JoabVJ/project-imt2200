@@ -61,7 +61,7 @@ const projectContent = [
     },
     { 
         title: 'Datos Utilizados', 
-        content: 'Los datos utilizados provienen de la Plataforma de Datos Abiertos del Gobierno de Chile, específicamente del conjunto <strong>“Atenciones de Urgencia por Causas Respiratorias”</strong>.<br>El registro se realiza semanalmente e incluye información sobre las atenciones por enfermedades respiratorias en establecimientos de salud de todo el país, principalmente del sector público.<br>Cada fila del dataset representa un <strong>establecimiento en una semana específica</strong>, e incluye tanto <strong>variables administrativas</strong> como <strong>epidemiológicas</strong>.<br>En términos generales, el dataset contiene múltiples años (2013 en adelante) y permite analizar la <strong>evolución temporal</strong>, <strong>distribución geográfica y diferencias por edad o tipo de patología</strong> en las consultas de urgencia respiratoria en Chile.<br>Antes de realizar el análisis exploratorio, es necesario definir la estrategia de procesamiento que seguiremos con los datos',
+        content: 'Los datos utilizados provienen de la Plataforma de Datos Abiertos del Gobierno de Chile, específicamente del conjunto <strong>“Atenciones de Urgencia por Causas Respiratorias”</strong>.<br>El registro se realiza semanalmente e incluye información sobre las atenciones por enfermedades respiratorias en establecimientos de salud de todo el país, principalmente del sector público.<br>Cada fila del dataset representa un <strong>establecimiento en una semana específica</strong>, e incluye tanto <strong>variables administrativas</strong> como <strong>epidemiológicas</strong>.<br><br>En términos generales, el dataset contiene múltiples años (2013 en adelante) y permite analizar la <strong>evolución temporal</strong>, <strong>distribución geográfica y diferencias por edad o tipo de patología</strong> en las consultas de urgencia respiratoria en Chile.<br>Antes de realizar el análisis exploratorio, es necesario definir la estrategia de procesamiento que seguiremos con los datos',
         details: [
             { 
                 subtitle: 'Variables Principales', 
@@ -72,16 +72,12 @@ const projectContent = [
     },
     { 
         title: 'Metodología', 
-        content: 'A',
-        // subtitle: 'Objetivos',
-        // subcontent: ''
+        content: 'El proyecto comenzó con la búsqueda de una fuente confiable de datos crudos, seleccionando finalmente los registros oficiales del Gobierno de Chile sobre enfermedades respiratorias desde 2013. Para facilitar el análisis y enfocar la comparación entre el período pre y post COVID-19, se acotó el trabajo a los años 2017-2025.<br>Luego se aplicó un proceso ETL para limpiar y preparar la base de datos. Con el dataset ya depurado, se realizó un Análisis Exploratorio de Datos (EDA) orientado a responder la pregunta principal mediante diversas visualizaciones y subpreguntas que permitieron identificar ciertas tendencias, con la cuál se obtienen conclusiones.<br>A partir del EDA se evaluaron correlaciones entre variables, lo que permitió determinar que no era viable construir un modelo predictivo directo sobre la pregunta inicial. Por ello, se decidió desarrollar un modelo alternativo enfocado en predecir el flujo de enfermedades respiratorias según la época del año, aprovechando la estacionalidad observada en los datos.',
         // imageSrc: "IMAGES/grafico.png"
     },
     { 
-        title: 'Proceso de ETL / Procesamiento Info', 
-        content: 'A',
-        // subtitle: 'Objetivos',
-        // subcontent: ''
+        title: 'Proceso de ELT', 
+        content: 'Antes de realizar el análisis exploratorio, es necesario definir la estrategia de procesamiento que seguiremos con los datos.<br>Estrategia de procesamiento: ELT vs ETL<br>Existen dos enfoques comunes para trabajar con datos:<br><br>ETL (Extract → Transform → Load):<br>ELT (Extract → Load → Transform):<br><br>En este proyecto utilizaremos ELT<br>Optamos por ELT porque:<br><br>El dataset es público, estructurado y grande, con posibles ajustes menores (nulos, formato de texto, nombres).<br>Nos permite mantener una copia cruda en la carpeta /data/raw/ y trabajar las transformaciones directamente en el notebook.<br>Facilita la reproducibilidad y trazabilidad del proceso, mostrando cada paso de limpieza dentro del análisis.',
         // imageSrc: "IMAGES/grafico.png"
     },
     { 
