@@ -143,17 +143,15 @@ function generateProjectModule() {
                 `;
             });
         }
-
-        // PROCESAMIENTO DE INFORMACION
-        if (section.imageSrc) {
-            htmlContent += `
-                <figure class="media-container">
-                    <img src="${section.imageSrc}" alt="Gráfico de ${section.title}" class="project-image">  
-                    <figcaption>Figura 1.${index}: ${section.title} - Visualización de datos.</figcaption>
-                </figure>
-            `;
-        }
-        
+                if (section.imageSrc) {
+                    htmlContent += `
+                        <figure class="media-container">
+                            <img src="${detail.imageSrc}" alt="Gráfico de ${detail.subtitle}" class="project-image">  
+                            ${detail.imageCaption ? `<figcaption>${detail.imageCaption}</figcaption>` : ''}
+                        </figure>
+                    `;
+                }
+            
         // REPOSITORIOS / LINKS
         if (section.links) {
             htmlContent += `<ul class="repo-list">`;
